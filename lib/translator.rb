@@ -5,6 +5,7 @@ def load_library(filepath)
   new_library = {get_meaning => {}, get_emoticon => {}}
   library.each do |meaning, emotes|
     
+  end
   new_library
 end
 
