@@ -26,5 +26,6 @@ def get_english_meaning(filepath,emoticon)
   library = load_library(filepath)
   library[get_meaning].each do |jemote,meaning|
     return meaning if jemote == emoticon
-
+  end
+  "Sorry, this isn't in the database!"
 end
