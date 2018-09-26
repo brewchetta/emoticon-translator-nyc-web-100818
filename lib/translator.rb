@@ -19,7 +19,7 @@ def get_japanese_emoticon(filepath,emoticon)
   library["get_emoticon"].each do |eemote,jemote|
     return jemote if eemote == emoticon
   end
-  "Sorry, this isn't in the database!"
+  "Sorry, that emoticon was not found"
 end
 
 def get_english_meaning(filepath,emoticon)
@@ -27,5 +27,5 @@ def get_english_meaning(filepath,emoticon)
   library["get_meaning"].each do |jemote,meaning|
     return meaning if jemote == emoticon
   end
-  "Sorry, this isn't in the database!"
+  "Sorry, that emoticon was not found"
 end
