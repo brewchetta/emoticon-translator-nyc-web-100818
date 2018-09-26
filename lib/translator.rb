@@ -16,6 +16,10 @@ end
 
 def get_japanese_emoticon(filepath,emoticon)
   library = load_library(filepath)
+  library[get_emoticon].each do |engl,japa|
+    return japa if engl == emoticon
+  end
+  "Sorry, this isn't in the database!"
 end
 
 def get_english_meaning
