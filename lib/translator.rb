@@ -2,8 +2,8 @@ require 'yaml'
 
 def load_library(filepath)
   library = YAML.load_file(filepath)
-  
-  library
+  new_library = {get_meaning => {}, get_emoticon => {}}
+  new_library
 end
 
 def get_japanese_emoticon
