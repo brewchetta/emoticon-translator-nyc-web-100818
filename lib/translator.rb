@@ -17,7 +17,7 @@ end
 def get_japanese_emoticon(filepath,emoticon)
   library = load_library(filepath)
   library[get_emoticon].each do |eemote,jemote|
-    return japa if engl == emoticon
+    return jemote if eemote == emoticon
   end
   "Sorry, this isn't in the database!"
 end
