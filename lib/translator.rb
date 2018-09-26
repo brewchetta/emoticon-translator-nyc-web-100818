@@ -3,7 +3,7 @@ require 'yaml'
 def load_library(filepath)
   library = YAML.load_file(filepath)
   new_library = {get_meaning => {}, get_emoticon => {}}
-  library.each |meaning, 
+  library.each |meaning, emotes|
   new_library
 end
 
