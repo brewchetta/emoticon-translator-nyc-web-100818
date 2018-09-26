@@ -22,6 +22,6 @@ def get_japanese_emoticon(filepath,emoticon)
   "Sorry, this isn't in the database!"
 end
 
-def get_english_meaning
-  # code goes here
+def get_english_meaning(filepath,emoticon)
+  
 end
