@@ -7,7 +7,7 @@ def load_library(filepath)
     engl_emote = emotes[0]
     japa_emote = emotes[1]
     new_library[get_meaning][japa_emote] = meaning
-    new_library[]
+    new_library[get_emoticon][engl_emote] = japa_emote
   end
   new_library
 end
