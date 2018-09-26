@@ -6,7 +6,7 @@ def load_library(filepath)
   library.each do |meaning, emotes|
     engl_emote = emotes[0]
     japa_emote = emotes[1]
-    new_library[get_meaning][emotes[1]] = meaning
+    new_library[get_meaning][japa_emote] = meaning
     new_library[]
   end
   new_library
